@@ -1,38 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Dancing+Script&family=Handlee&display=swap');
+
+/* Navbar */
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0.5rem 0;
+  list-style: none;
+}
+
+nav p,
+a {
+  margin: 0;
+  color: #444444;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #004445;
+  background-color: rgba(250, 245, 228, 1);
+  border-radius: 3px;
+
+}
+/*  */
+
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: cornsilk;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1{
+    --units: 1.5vmax;
+    --brick1: #CC0000;
+    --brick2: #DD0000;
+    --lines: #565656;
+    --gp-ln: 50%/calc(var(--units) * 10) calc(var(--units) * 5);
+    --gp-cn: 50%/calc(var(--units) * 5) calc(var(--units) * 5);
+    height: 10vh;
+    background: 
+      repeating-conic-gradient(from 90deg at 95% 55%, var(--lines) 0% 25%, #fff0 0% 100%) var(--gp-cn), 
+      repeating-linear-gradient(180deg, var(--lines) 0 5%, #fff0 0 50%, var(--lines) 0 55%, var(--brick2) 0 100% ) var(--gp-ln), 
+      repeating-linear-gradient(90deg, var(--brick1) 0 47.5%, var(--lines) 0 50%, var(--brick1) 0 97.5%, var(--lines) 0 100% ) var(--gp-ln);
+  font-family: 'Bruno Ace';
   color: white;
+  font-size: 30px;
+
+  }
+
+
+button{
+
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
 }
 
-.App-link {
-  color: #61dafb;
+
+button:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:active {
+  opacity: .5;
 }
+

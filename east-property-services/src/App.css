@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Dancing+Script&family=Handlee&display=swap');
 
 /* Navbar */
-
 nav ul {
   display: flex;
   align-items: center;
@@ -21,16 +20,12 @@ a {
 }
 
 nav a:hover {
-  /* text-decoration: underline; */
   color: #004445;
   background-color: rgba(250, 245, 228, 1);
   border-radius: 3px;
 
 }
-
-
-
-/* ******* */
+/*  */
 
 .App {
   text-align: center;

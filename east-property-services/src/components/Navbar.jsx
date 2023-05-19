@@ -6,6 +6,7 @@ const Navbar = () => {
     
     <nav className="navbar">
       <h1>EAST Property Services</h1>
+      <h5>For your new home, head east</h5>
       {/* <div className="links">
       <Link to="/Home">Homepage</Link><p> </p>
         <Link to="/seller">Add Seller</Link>

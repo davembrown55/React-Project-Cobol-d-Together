@@ -33,7 +33,33 @@ nav a:hover {
 body{
   background-color: cornsilk;
 }
-h1{
+h1 {
+  text-align: center;
+  margin: 0;  
+  padding: 1rem;  
+  background-image: linear-gradient( to right, #118a7e, white);  
+  color: white;  
+  text-align: left;  
+  font-family: 'Bruno Ace';
+}
+
+nav h5 {
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+  background-color: #118a7e;
+  color: white;
+  font-family: 'Dancing Script';
+  font-size: 40px;
+  }
+
+
+
+
+
+
+
+/* h1{
     --units: 1.5vmax;
     --brick1: #CC0000;
     --brick2: #DD0000;
@@ -49,7 +75,7 @@ h1{
   color: white;
   font-size: 30px;
 
-  }
+  } */
 
 
 button{

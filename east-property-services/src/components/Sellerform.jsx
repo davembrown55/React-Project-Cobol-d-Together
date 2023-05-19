@@ -1,8 +1,10 @@
 import React from "react";
 import { useState } from "react";
 //import { useNavigate} from "react-router-dom";
-
-
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
+import Col from'react-bootstrap/Col';
 
 
 const SellerForm = () => {
@@ -36,41 +38,56 @@ const SellerForm = () => {
 }
 
    return (
-    <form onSubmit={handleSubmit}>
-        <div className="row">
-            <div className="form-group col-md-6">
-                <label>Title</label>
-                <select value={Sellertitle} onChange={(e) => setSellerTitle(e.target.value)}>
-                <option value="Mr">Mr</option>
-                <option value="Mrs">Mrs</option>
-                <option value="Miss">Miss</option>
-                <option value="Dr">Dr</option>
-                </select>
-            </div>
-                <div className="form-group col-md-6">
-                    <label htmlForm="sellerFName">First Name</label>
-                    <input type="text" required value={Sellerfirstname} onChange={(e) => setSellerFname(e.target.value)}/>
-                </div>
-                <div className="form-group col-md-6">
-                    <label htmlFor="sellerSurname">Surname</label>
-                    <input type="text" required value={Sellersurname} onChange={(e) => setSellerSurname(e.target.value)}/>
-                </div>
-                <div className="form-group">
-                    <label htmlFor="sellerAddress">Address</label>
-                    <input type="text" required value={Selleraddress} onChange={(e) => setSellerAddress(e.target.value)}/>
-                </div>
-                <div className="form-group col-md-6">
-                    <label htmlFor="sellerPostcode" >Postcode</label>
-                    <input type="text" required value={Sellerpostcode} onChange={(e) => setSellerPostcode(e.target.value)}/>
-                </div>
-                <div className="form-group col-md-6">
-                    <label htmlFor="sellerPhone">Phone</label>
-                    <input type="number" required value={Sellerphone} onChange={(e) => setSellerPhone(e.target.value)}/>
-                </div>
-            </div>
-            <button type = "Submit">Add seller to system</button>
-            
-    </form>
+        <Form>
+            <Form.Label>Enter new Seller</Form.Label>
+            <Row className="mb-3">
+            <Form.Group as={Col} controlId="formtitle">
+        <Form.Label>Title</Form.Label>
+        <Form.Select aria-label="Default" value={Sellersurname} onChange={(e) => setSellerSurname(e.target.value)}>
+        <option>Choose</option>
+        <option value={Sellertitle} onChange={(e) => setSellerTitle(e.target.value)}>Mr</option>
+        <option value={Sellertitle} onChange={(e) => setSellerTitle(e.target.value)}>Miss</option>
+        <option value={Sellertitle} onChange={(e) => setSellerTitle(e.target.value)}>Mrs</option>
+        <option value={Sellertitle} onChange={(e) => setSellerTitle(e.target.value)}>Dr</option>
+        </Form.Select>
+      </Form.Group>
+        <Form.Group as={Col}  controlId="formfirstname">
+        <Form.Label>First name</Form.Label>
+        <Form.Control type="firstname"  value={Sellerfirstname} onChange={(e) => setSellerFname(e.target.value)}/>
+        <Form.Text className="text-muted">
+        </Form.Text>
+      </Form.Group>
+      <Form.Group as={Col} controlId="formsurname">
+        <Form.Label>Surname</Form.Label>
+        <Form.Control type="surname"  value={Sellersurname} onChange={(e) => setSellerSurname(e.target.value)}/>
+        <Form.Text className="text-muted" >
+        </Form.Text>
+      </Form.Group>
+      </Row>
+      <Form.Group className="mb-3" controlId="formaddress">
+        <Form.Label>Address</Form.Label>
+        <Form.Control type="address"  value={Selleraddress} onChange={(e) => setSellerAddress(e.target.value)}/>
+        <Form.Text className="text-muted">
+        </Form.Text>
+      </Form.Group>
+      <Row className="mb-3">
+      <Form.Group as={Col} controlId="formpostcode">
+        <Form.Label>Postcode</Form.Label>
+        <Form.Control type="postcode" value={Sellerpostcode} onChange={(e) => setSellerPostcode(e.target.value)}/>
+        <Form.Text className="text-muted fs-2" >
+        </Form.Text>
+      </Form.Group>
+      <Form.Group as={Col} controlId="formphone">
+        <Form.Label>Contact</Form.Label>
+        <Form.Control type="phone" value={Sellerphone} onChange={(e) => setSellerPhone(e.target.value)}/>
+        <Form.Text className="text-muted">
+        </Form.Text>
+      </Form.Group>
+      </Row>
+      <Button variant="primary" type="submit">
+        Add seller
+      </Button>
+    </Form>
    )
 }
 export default SellerForm;

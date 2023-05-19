@@ -1,0 +1,93 @@
+{
+  "sellers": [
+    {
+      "id": 1,
+      "firstName": "Hugh",
+      "surname": "Mann",
+      "address": "this is a test address",
+      "postcode": "AB1 2CD",
+      "phone": "01234567890"
+    },
+    {
+      "id": 2,
+      "firstName": "Mann",
+      "surname": "Jones",
+      "address": "this is a test address - again",
+      "postcode": "TT1 1TT",
+      "phone": "01234567890"
+    },
+    {
+      "title": "Mrs",
+      "firstname": "Test",
+      "surname": "Test",
+      "address": "Test",
+      "postcode": "Test",
+      "phone": "66666",
+      "id": 3
+    },
+    {
+      "title": "Miss",
+      "firstname": "Littyle",
+      "surname": "Girl",
+      "address": "dhjakhfkj",
+      "postcode": "hjkhkj",
+      "phone": "888888",
+      "id": 4
+    },
+    {
+      "title": "",
+      "firstname": "Marek",
+      "surname": "Huddleston",
+      "address": "djakhdkjahskj",
+      "postcode": "hjhjkhkjh",
+      "phone": "999999",
+      "id": 5
+    },
+    {
+      "title": "",
+      "firstname": "yeryery",
+      "surname": "grdg",
+      "address": "yrey",
+      "postcode": "yreye",
+      "phone": "9999",
+      "id": 6
+    },
+    {
+      "title": "",
+      "firstname": "Indiana",
+      "surname": "Jones",
+      "address": "Cambridge University",
+      "postcode": "hhs",
+      "phone": "11",
+      "id": 7
+    },
+    {
+      "Sellertitle": "Dr",
+      "Sellerfirstname": "Test",
+      "Sellersurname": "Test",
+      "Selleraddress": "12 Test rd",
+      "Sellerpostcode": "ha12 2hh",
+      "Sellerphone": "999",
+      "id": 8
+    },
+    {
+      "Sellertitle": "",
+      "Sellerfirstname": "hello",
+      "Sellersurname": "Hello",
+      "Selleraddress": "hdjkashk",
+      "Sellerpostcode": "hjhkjh",
+      "Sellerphone": "44343",
+      "id": 9
+    }
+  ],
+  "buyers":[
+    {
+      "id": 1,
+      "firstName": "Cookie",
+      "surname": "Cat",
+      "address": "42 Pen-y-lan Road, Cardiff",
+      "postcode": "CA1 8RR",
+      "phone": ""
+    }
+  ]
+}
